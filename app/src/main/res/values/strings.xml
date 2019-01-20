@@ -1,4 +1,7 @@
 <resources>
-    <string name="app_name">RaceTracker</string>
-    <string name="action_settings">Settings</string>
+<string name="app_name">RaceTracker</string>
+<string name="action_settings">Settings</string>
+<string name="manage_students">Manage Students</string>
+<string name="manage_races">Manage Races</string>
+<string name="view_status">View Statistics</string>
 </resources>
