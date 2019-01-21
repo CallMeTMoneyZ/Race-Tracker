@@ -1,5 +1,6 @@
 package com.example.racetracker;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +28,48 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        //initialize manage students button
+        Button manageStudent = findViewById(R.id.manageStudents);
+        manageStudent.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                loadManageStudent();
+            }
+        });
+
+        //initialize manage races button
+        Button manageRace = findViewById(R.id.manageRaces);
+        manageRace.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                loadManageRace();
+            }
+        });
+
+        //initialize view statistics button
+        Button viewStats = findViewById(R.id.viewStats);
+        viewStats.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                loadViewStats();
+            }
+        });
+    }
+
+    public void loadManageStudent(){
+        Intent intent = new Intent(this, activity_Manage_Students.class);
+        startActivity(intent);
+    }
+
+    public void loadManageRace(){
+        Intent intent = new Intent(this, activity_Mange_Races.class);
+        startActivity(intent);
+    }
+
+    public void loadViewStats(){
+        Intent intent = new Intent(this, activity_View_Stats.class);
+        startActivity(intent);
     }
 
     @Override

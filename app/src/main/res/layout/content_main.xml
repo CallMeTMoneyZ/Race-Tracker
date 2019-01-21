@@ -9,7 +9,7 @@
     tools:showIn="@layout/activity_main">
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/viewStats"
         android:layout_width="390dp"
         android:layout_height="83dp"
         android:layout_marginStart="12dp"
@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/manageRaces"
         android:layout_width="390dp"
         android:layout_height="83dp"
         android:layout_marginStart="12dp"
@@ -45,7 +45,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/manageStudents"
         android:layout_width="390dp"
         android:layout_height="83dp"
         android:layout_marginStart="12dp"

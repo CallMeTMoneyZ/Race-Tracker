@@ -4,4 +4,7 @@
 <string name="manage_students">Manage Students</string>
 <string name="manage_races">Manage Races</string>
 <string name="view_status">View Statistics</string>
+<string name="title_activity__manage__students">Manage Students</string>
+<string name="title_activity__mange__races">Mange Races</string>
+<string name="title_activity__view__stats">Statistics</string>
 </resources>
