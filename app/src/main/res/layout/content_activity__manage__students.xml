@@ -8,4 +8,52 @@
     tools:context=".activity_Manage_Students"
     tools:showIn="@layout/activity__manage__students">
 
+    <EditText
+        android:id="@+id/FirstNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/LastNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/FirstNameText"
+        app:layout_constraintStart_toStartOf="@+id/FirstNameText"
+        app:layout_constraintTop_toBottomOf="@+id/FirstNameText" />
+
+    <EditText
+        android:id="@+id/Grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Grade"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/LastNameText"
+        app:layout_constraintStart_toStartOf="@+id/LastNameText"
+        app:layout_constraintTop_toBottomOf="@+id/LastNameText" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="267dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/Grade"
+        app:layout_constraintStart_toStartOf="@+id/Grade"
+        app:layout_constraintTop_toBottomOf="@+id/Grade" />
 </android.support.constraint.ConstraintLayout>
